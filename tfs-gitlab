@@ -81,7 +81,7 @@ function run_docker {
     -e "SMTP_STARTTLS=$SMTP_STARTTLS" \
     -e "SMTP_OPENSSL_VERIFY_MODE=$SMTP_OPENSSL_VERIFY_MODE" \
     -e "REDMINE_URL=$REDMINE_URL" \
-    --link tfs-pgsql:postgresql \
+    --link tfs-postgresql:postgresql \
     --link tfs-redis:redisio \
     -v $VOLUME_DATA:/home/git/data \
     -v $VOLUME_LOG:/var/log/gitlab \
