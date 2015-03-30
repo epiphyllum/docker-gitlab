@@ -17,8 +17,8 @@ GITLAB_EMAIL=18874881230@163.com
 
 # db
 DB_NAME=gitlabhq_production
-DB_USER=pgsql
-DB_PASS=pgsql
+DB_USER=postgresql
+DB_PASS=postgresql
 
 # mail related
 SMTP_USER=18874881230
@@ -40,7 +40,8 @@ VOLUME_LOG=$HOME/appstore/tfs/gitlab/log
 VERSION=${VERSION:-"latest"};
 
 if [ $# -lt 1 ]; then
-    Usage;
+    echo "Usage: tfs-gitlab run|start|stop|clean";
+    exit 0;
 fi
 
 # 启动容器
