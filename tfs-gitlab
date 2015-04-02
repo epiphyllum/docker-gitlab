@@ -15,6 +15,14 @@ GITLAB_HOST=gitlab.tfs.com
 GITLAB_SUPPORT=gitlab@tfs.comf
 GITLAB_EMAIL=18874881230@163.com
 
+#######
+# eanble https
+# GITLAB_HTTPS=true
+# SSL_SELF_SIGNED=true
+#    -e "GITLAB_HTTPS=$GITLAB_HTTPS" \
+#    -e "SSL_SELF_SIGNED=$SSL_SELF_SIGNED" \
+#######
+
 # db
 DB_NAME=gitlabhq_production
 DB_USER=postgresql
